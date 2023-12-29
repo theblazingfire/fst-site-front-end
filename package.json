@@ -8,10 +8,13 @@
     "preview": "vite preview",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore src",
     "format": "prettier --write src/",
-    "test": "",
+    "test:unit": "vitest",
+    "test:components": "",
     "deploy": ""
   },
   "dependencies": {
+    "@testing-library/vue": "^8.0.1",
+    "vitest": "^1.1.0",
     "vue": "^3.3.11"
   },
   "devDependencies": {
