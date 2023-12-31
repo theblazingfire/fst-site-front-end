@@ -1,5 +1,5 @@
 {
-  "name": "FST-SITE-FRONT-END",
+  "name": "fst-site-front-end",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -32,10 +32,5 @@
     "prettier": "^3.1.1",
     "vite": "^5.0.8",
     "vitest": "^1.1.0"
-  },
-  "eslintConfig": {
-    "globals": {
-      "jest": true
-    }
   }
 }
