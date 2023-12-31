@@ -1,23 +1,21 @@
 <template>
-    <div>
-        <h1>
-            Home page content {{ message }}
-        </h1>
-    </div>
+  <div>
+    <h1></h1>
+  </div>
 </template>
 
 <script>
 export default {
-    data () {
-        return {
-            message : "How are you?"
-        }
-    }
-}
+  data() {
+    return {
+      
+    };
+  },
+};
 </script>
 
 <style>
-    h1 {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 </style>

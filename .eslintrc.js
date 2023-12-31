@@ -13,6 +13,10 @@ let config = {
     // override/add rules settings here, such as:
     "vue/no-unused-vars": "error",
     "vue/no-multiple-template-root": "warn",
+    "vue/multi-word-component-names": "off",
+  },
+  globals: {
+    test: true,
   },
 };
 

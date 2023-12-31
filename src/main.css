@@ -1,0 +1,61 @@
+:root {
+    --xs: 0px;
+    --sm: 576px;
+    --md: 768px;
+    --lg: 992px;
+    --xl: 1200px;
+    --xxl: 1400px;
+}
+
+* {
+    margin : 0px;
+    padding : 0px;
+    box-sizing : border-box;
+}
+
+.border {
+    border : 1px solid;
+}
+
+.no-gutter {
+    padding : 0px;
+}
+
+.height-1{
+    height : 60px;
+}
+
+.height-2{
+    height : 120px;
+}
+
+.height-fit {
+    height: fit-content;
+}
+
+body {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+@media (min-width :576px) and (max-width : 992px){
+    /* style for mobile within the range of 0px to 567px*/
+    body {
+        padding-left: 60px;
+        padding-right : 60px;
+    }
+}
+
+@media (min-width :0px) and (max-width :576px){
+    /* style for mobile within the range of 0px to 567px*/
+    body {
+        padding-left: 30px;
+        padding-right : 30px;
+    }
+}
+
+
+
+/*
+breaking point variables
+*/

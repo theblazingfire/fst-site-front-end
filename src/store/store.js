@@ -1,16 +1,16 @@
-import {createStore} from "vuex"
+import { createStore } from "vuex";
 
 let store = createStore({
-    state () {
-        return {
-            testData : ""
-        }
+  state() {
+    return {
+      testData: "",
+    };
+  },
+  mutations: {
+    changeTestData(state, payload) {
+      state.testData = payload;
     },
-    mutations : {
-        changeTestData (state,payload) {
-            state.testData = payload
-        }
-    }
-})
+  },
+});
 
-export default store
+export default store;
