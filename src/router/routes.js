@@ -1,8 +1,6 @@
-import HelloWorld from "../components/HelloWorld.vue";
-import HomePage from "../components/HomePage.vue";
+import HomePage from "../components/homepage/HomePage.vue";
 
 let routes = [
-  { path: "/hello", component: HelloWorld },
   { path: "/", component: HomePage },
 ];
 

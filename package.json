@@ -6,11 +6,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore src",
+    "lint": "eslint . --ext .js,.vue --ignore-path .gitignore src",
     "format": "prettier . --write",
-    "test:unit": "vitest",
-    "test:components": "",
-    "test:jest": "jest",
+    "test": "vitest",
     "deploy": ""
   },
   "dependencies": {
