@@ -4,6 +4,7 @@
 // bootstrap-grid framework imported here
 import "./style.css"
 import "../node_modules/bootstrap/dist/css/bootstrap-grid.min.css"
+import "./font.css"
 import Header from "./components/header/Header.vue";
 </script>
 
