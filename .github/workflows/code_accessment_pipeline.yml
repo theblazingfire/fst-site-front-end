@@ -2,25 +2,25 @@ name: code accessment pipeline
 
 on: 
   pull_request:
-    branch:
+    branches:
       - main
 
 jobs: 
-  name: Code Accessment Pipeline
+  CodeAccessmentPipeline:
     runs-on: ubuntu-20.04
     steps: 
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v4
-      with: 
-        node-version: "20.9.0"
-    name: Install Dependencies
-    - run: npm install
-    name: Format Code
-    - run: npm run format
-    name: Lint Code
-    - run: npm run lint
-    name: filtered test
-    - run: npm run test
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v4
+        with: 
+          node-version: "20.9.0"
+      - name: Install Dependencies
+        run: npm install
+      - name: Format Code
+        run: npm run format
+      - name: Lint Code
+        run: npm run lint
+      - name: filtered test
+        run: npm run test
     
     
 
