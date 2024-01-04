@@ -1,29 +1,24 @@
-name: code accessment pipeline
+name: Code Quality Accessment
 
-on: 
+on:
   pull_request:
-    branches:
-      - main
+    branches: [main, experimental]
+  push :
+    branches: [main, experimental]
 
-jobs: 
-  CodeAccessmentPipeline:
+
+jobs:
+  Code_Accessment:
     runs-on: ubuntu-20.04
-    steps: 
+    steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v4
-        with: 
+        with:
           node-version: "20.9.0"
       - name: Install Dependencies
         run: npm install
-      - name: Format Code
-        run: npm run format
       - name: Lint Code
         run: npm run lint
-      - name: filtered test
+      - name: Run Tests
         run: npm run test
-    
-    
-
-
-
 

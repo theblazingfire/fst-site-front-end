@@ -1,7 +1,10 @@
 import { createApp } from "vue";
 import store from "./store/store";
 import router from "./router/router";
-import "./style.css";
+import "../node_modules/bootstrap/dist/css/bootstrap-grid.min.css";
+import "./assets/fontawesome/css/all.min.css";
+import "./font.css";
+import "./main.css";
 import App from "./App.vue";
 
 let app = createApp(App);
