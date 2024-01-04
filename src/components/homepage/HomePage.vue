@@ -1,15 +1,13 @@
 <template>
   <div>
-    <h1></h1>
+    <h1 data-testid="home"></h1>
   </div>
 </template>
 
 <script>
 export default {
   data() {
-    return {
-      
-    };
+    return {};
   },
 };
 </script>

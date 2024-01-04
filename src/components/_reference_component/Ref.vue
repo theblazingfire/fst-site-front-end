@@ -6,6 +6,9 @@
 
 <script>
 import "./ref.css";
-export default {};
+export default {
+  data() {
+    return {};
+  },
+};
 </script>
-

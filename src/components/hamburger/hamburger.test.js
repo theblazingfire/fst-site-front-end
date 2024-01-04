@@ -1,11 +1,11 @@
 import { describe, expect, test } from "vitest";
 import { render, screen } from "@testing-library/vue";
-import Header from "./Header.vue";
+import Hamburger from "./Hamburger.vue";
 
 describe("test", function () {
   test("test1", function () {
-    render(Header);
-    let header = screen.findByRole("baller", { exact: false });
-    expect(header).toBeDefined();
+    render(Hamburger);
+    let HamburgerElement = screen.findByRole("ham");
+    expect(HamburgerElement).toBeDefined();
   });
 });
