@@ -16,6 +16,7 @@ Jobs - CodeAccessment
 
 - **Deployment** : Deployment takes care of releasing / triggering deploy actions of production code to the hosting services.
 
+Hosting used is netlify for the dev-preview-phase. Netlify auto deploys the main branch
 deployment workflow is applied to the folowing branches : [main] for the following events : [push]
 
 - **tagging-releases** : tagging releases takes care of versioning for our repository, that way we can track production changes (main branch) to our repository, making rollbacks possible.
