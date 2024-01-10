@@ -6,7 +6,8 @@
   height: 60px;
   transition: 1s;
   background-color: white;
-  position: relative;
+  position: fixed;
+  width: 100%;
   z-index: 10;
 }
 
@@ -15,7 +16,8 @@
   transition: 1s;
   box-shadow: 0px -4px 8px var(--dark);
   background-color: white;
-  position: relative;
+  position: fixed;
+  width: 100%;
   z-index: 1;
 }
 
@@ -63,9 +65,14 @@ header .height-2 {
   height: 100vh;
   background-color: var(--cloud);
   transition: all 1s;
+  padding-top: 140px;
 }
+
 .mobile-nav.open {
   left: 30%;
+}
+.mobile-nav.down{
+  padding-top: 80px
 }
 
 #mobile-menu li {
@@ -73,6 +80,7 @@ header .height-2 {
   border-bottom: 2px solid var(--coolbubble-tint-4);
   margin-bottom: 40px;
 }
+
 #mobile-menu,
 #mobile-menu li a {
   color: var(--dark);
@@ -81,6 +89,7 @@ header .height-2 {
 #mobile-menu ul {
   margin-top: 40px;
 }
+
 .styleRef {
   /* About Style */
   font-size: 12px;

@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="default_body_padding header-wrapper" :class="{ down }">
-      <header class="app-header">
+      <header role="header" class="app-header">
         <div aria-baller="true" class="container-fluid">
           <div class="hha row height-2 align-items-center">
             <div
@@ -9,7 +9,7 @@
               class="col-6 col-sm-3 col-md-4 col-lg-2 order-sm-1 order-lg-1 no-gutter"
             >
               <div class="height-fit">
-                <img src="../../assets/images/logo/logo_main.svg" />
+                <img src="../../assets/images/logo/logo_main.svg" alt="Five and Six Technologies - Company Logo"/>
               </div>
             </div>
 
@@ -89,11 +89,12 @@
         </div>
       </header>
     </div>
+
     <div
       id="mobile-menu"
-      :class="{ open: mobileMenu }"
-      :style="mobileStyle"
+      :class="{ open: mobileMenuOpen, down }"
       class="default_body_padding mobile-nav"
+      role="mobile_menu"
     >
       <div>
         <h2 class="text-subheading-bold">Menu</h2>
@@ -157,25 +158,15 @@ export default {
     return {
       homeActive: true,
       down: false,
-      mobileMenu: false,
+      mobileMenuOpen: false
     };
   },
   computed: {
-    mobileStyle() {
-      if (this.down) {
-        return {
-          "padding-top": "80px",
-        };
-      } else {
-        return {
-          "padding-top": "140px",
-        };
-      }
-    },
+
   },
   methods: {
     openMobileMenu(open) {
-      this.mobileMenu = open;
+      this.mobileMenuOpen = open;
     },
   },
 };
