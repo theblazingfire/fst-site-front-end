@@ -2,10 +2,10 @@ name: Code Quality Accessment
 
 on:
   pull_request:
-    branches: [main, experimental]
-    types: [opened,closed,synchronize]
+    branches: [experimental]
+    types: [opened]
   push:
-    branches: [main, experimental]
+    branches: [main]
 
 jobs:
   Code_Accessment:
@@ -23,21 +23,21 @@ jobs:
         run: npm run test
       - name: Check Github Head Ref
         run: echo ${{github.event_name}} ${{github.ref_name}} && ${{!contains(github.event.head_commit.message, '#skip')}}
-  
-  Bump_Tag: 
+
+  Bump_Tag:
     if: ( github.ref_name == 'main' && github.event_name == 'push' && !contains(github.event.head_commit.message, '#skip'))
     needs: [Code_Accessment]
     runs-on: ubuntu-20.04
-    permissions: 
+    permissions:
       contents: write
-    steps: 
-      - name : Begin Tagging Code Milestone
-        run : echo "Tagging new merge to the main branch"
+    steps:
+      - name: Begin Tagging Code Milestone
+        run: echo "Tagging new merge to the main branch"
       - name: checkout repo
         uses: actions/checkout@v3
       - name: Bump version and push tag
-        uses:  anothrNick/github-tag-action@1.55.0
-        env: 
+        uses: anothrNick/github-tag-action@1.55.0
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WITH_V: true
-          DEFAULT_BUMP: minor
+          DEFAULT_BUMP: none

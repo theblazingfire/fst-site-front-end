@@ -15,7 +15,7 @@ export default {
   emits: ["open"],
   data() {
     return {
-      open : false,
+      open: false,
     };
   },
   methods: {

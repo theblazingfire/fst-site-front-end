@@ -1,0 +1,86 @@
+/*
+Animating the .line1 width with pure css animations
+*/
+
+/*
+*/
+.line1 {
+  animation: line1 10s cubic-bezier(0.25, 0.4, 0.55, 1.4) 0s infinite;
+}
+
+@keyframes line1 {
+  0% {
+    width: 0%;
+  }
+  12.5% {
+    width: 70%;
+  }
+  40% {
+    width: 0%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+.line2 {
+  animation: line2 10s cubic-bezier(0.25, 0.4, 0.55, 1.4) 0s infinite;
+}
+
+@keyframes line2 {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 0%;
+  }
+  37.5% {
+    width: 100%;
+  }
+  65% {
+    width: 0%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.line3 {
+  animation: line3 10s cubic-bezier(0.25, 0.4, 0.55, 1.4) 0s infinite;
+}
+
+@keyframes line3 {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 0%;
+  }
+  62.5% {
+    width: 125%;
+  }
+  90% {
+    width: 0%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+.line4 {
+  animation: line4 10s cubic-bezier(0.25, 0.4, 0.55, 1.4) 0s infinite;
+}
+
+@keyframes line4 {
+  0% {
+    width: 0%;
+  }
+
+  75% {
+    width: 0%;
+  }
+  87.5% {
+    width: 70%;
+  }
+  100% {
+    width: 0%;
+  }
+}

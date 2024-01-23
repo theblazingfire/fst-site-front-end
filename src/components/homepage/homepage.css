@@ -1,0 +1,277 @@
+/* hero main layout*/
+#hero {
+  position: relative;
+}
+
+.hero-main {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-backgrounds {
+  position: absolute;
+  bottom: 45%;
+  width: 100%;
+}
+
+.hero-height {
+  height: max-content;
+  color: var(--dark);
+}
+
+/* 
+Style for the main header text Start
+*/
+
+.hero-text-box {
+  /* About Style */
+  position: relative;
+  width: max-content;
+  margin: 0px auto;
+}
+
+.hero-contents h1 {
+  /* Hero Main Text Style */
+  color: var(--dark);
+  position: relative;
+  z-index: 1;
+}
+
+.ht-artist-text {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.ht-extras-ring {
+  height: 30px;
+  margin-right: -10px;
+  position: relative;
+  bottom: -3px;
+  display: inline;
+  width: max-content;
+}
+
+.ht-dev-text {
+  /* Styling Developers Main heading text */
+  color: var(--coolbubble-shade-1);
+}
+
+.ht-dev-backgound {
+  height: 40px;
+  width: 115%;
+  border-radius: 6px;
+  background-color: #ffcb7d;
+  display: inline-block;
+  position: relative;
+  top: 155px;
+  z-index: 0;
+  left: -5%;
+}
+
+.ht-anim-extras {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.ht-line {
+  position: relative;
+  display: inline-block;
+  height: 4px;
+  background-color: var(--dark);
+  border-radius: 3px;
+  margin-top: 50px;
+}
+
+.ht-line.line1 {
+  width: 0%;
+  top: -12px;
+}
+
+.ht-line.line2 {
+  width: 0%;
+  top: -14px;
+}
+
+.ht-line.line3 {
+  width: 0%;
+  left: -12%;
+  background-color: var(--papaya-shade-2);
+  top: -15px;
+}
+
+.ht-line.line4 {
+  width: 0%;
+  top: -17px;
+}
+
+/* 
+Style for the main header text End 
+*/
+
+/* 
+Style for the hero hanging text
+*/
+
+.hanging-bar-x {
+  /* About Style */
+  width: 70%;
+  height: 30px;
+  background-color: var(--smoke);
+  border-radius: 16px;
+  border: 2px solid var(--coolbubble-tint-2);
+  z-index: 1;
+}
+.hanging-bar-y {
+  width: 30px;
+  height: 90px;
+  background-color: var(--smoke);
+  border-radius: 16px;
+  border: 2px solid var(--coolbubble-tint-2);
+  position: relative;
+  bottom: 30px;
+  z-index: 1;
+}
+.hanging-pivot {
+  width: 17px;
+  height: 17px;
+  border-radius: 20px;
+  background-color: var(--dark-gray);
+  position: relative;
+  bottom: 54px;
+  z-index: 1;
+}
+.hanging-content {
+  border-radius: 10px;
+  position: relative;
+  bottom: 70px;
+  border: 2px solid var(--coolbubble);
+  background-color: var(--dark);
+  color: var(--smoke);
+  z-index: 0;
+  transform: rotate(-7deg);
+  transform-origin: 50% 0%;
+  max-width: 500px;
+}
+
+/*
+Style for hero-images.
+*/
+.hero-image-box {
+  /* About Style */
+  position: relative;
+}
+
+img.hero-image-extra {
+  width: 40px;
+  position: absolute;
+  left: 70%;
+  top: 10px;
+}
+img.hero-image {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+}
+
+/* Style for the background effect*/
+.hero-background-box {
+  position: relative;
+  width: 100%;
+}
+.hero-background-box > div {
+  display: block;
+  position: absolute;
+  width: 100%;
+}
+.bg-gray {
+  bottom: 100px;
+}
+.bg-papaya {
+  bottom: 0px;
+}
+.hb-img-mobile2 {
+  width: 100%;
+  height: 270px;
+}
+.hb-img-mobile1 {
+  width: 100%;
+  height: 300px;
+}
+.hb-img-mobile2 {
+}
+
+/*
+*Responsive
+*/
+
+@media (min-width: 400px) {
+}
+@media (min-width: 500px) {
+}
+@media (min-width: 500px) {
+}
+@media (min-width: 768px) {
+  .hero-image-box {
+    /* About Style */
+    margin-top: 20px;
+  }
+  img.hero-image {
+    max-width: unset;
+  }
+  .hero-backgrounds {
+    bottom: 22%;
+  }
+}
+@media (min-width: 900px) {
+  .hanging-content {
+    max-width: 420px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* responsive for header text extras*/
+  .ht-line.line1 {
+    width: 200px;
+    top: -18px;
+  }
+
+  .ht-line.line2 {
+    width: 290px;
+    top: 0px;
+  }
+
+  .ht-line.line3 {
+    width: 135%;
+    left: -14%;
+    background-color: var(--papaya-shade-2);
+    top: 20px;
+  }
+
+  .ht-line.line4 {
+    width: 190px;
+    top: 28px;
+  }
+
+  .ht-dev-backgound {
+    height: 60px;
+    width: 120%;
+    margin-left: -2%;
+    top: 190px;
+  }
+
+  .bg-gray {
+    bottom: 160px;
+  }
+
+  .hero-backgrounds {
+    bottom: 15%;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+.styleRef {
+  /* About Style */
+}

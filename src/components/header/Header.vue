@@ -9,7 +9,11 @@
               class="col-6 col-sm-3 col-md-4 col-lg-2 order-sm-1 order-lg-1 no-gutter"
             >
               <div class="height-fit">
-                <img src="../../assets/images/logo/logo_main.svg" alt="Five and Six Technologies - Company Logo"/>
+                <img
+                  class="logo"
+                  src="../../assets/images/logo/logo_main.svg"
+                  alt="Five and Six Technologies - Company Logo"
+                />
               </div>
             </div>
 
@@ -144,25 +148,34 @@
         </ul>
       </nav>
     </div>
-
-    <button @click="down = !down">Toggle Down</button>
   </section>
 </template>
 
 <script>
 import "./header.css";
 import Hamburger from "../hamburger/Hamburger.vue";
+import store from "../../store/store";
+document.addEventListener("scroll", () => {
+  let top = window.scrollY == 0;
+  console.log("top", top);
+  if (top) {
+    store.commit("changePageAtTop", "true");
+  } else {
+    store.commit("changePageAtTop", "false");
+  }
+});
 export default {
   components: { Hamburger },
   data() {
     return {
       homeActive: true,
-      down: false,
-      mobileMenuOpen: false
+      mobileMenuOpen: false,
     };
   },
   computed: {
-
+    down() {
+      return this.$store.state.pageAtTop !== "true";
+    },
   },
   methods: {
     openMobileMenu(open) {
