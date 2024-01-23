@@ -46,10 +46,18 @@
   --shalewa-shade-2: #fff;
   --shalewa-shade-3: #fff;
   --shalewa-shade-4: #fff;
+  /* Padding */
+  --length-quater: 15px;
+  --length-half: 30px;
+  --length-1: 60px;
+  --length-2: 120px;
 }
 button {
   /* Override Defaults - Write Globals */
   border: 0px solid;
+}
+button:hover {
+  cursor: pointer;
 }
 * {
   /* About Style */
@@ -59,11 +67,69 @@ button {
   font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+img {
+  width: 100%;
+}
+
 body {
   width: 100%;
   overflow-x: hidden;
 }
 
+.padding-quater {
+  padding: var(--length-quater);
+}
+
+.padding-half {
+  padding: var(--length-half);
+}
+
+.padding-1 {
+  padding: var(--length-1);
+}
+
+.padding-2 {
+  padding: var(--length-2);
+}
+.offset-top-none {
+  padding-top: 0px;
+}
+.offset-main {
+  /* About Style */
+  padding-top: 120px;
+}
+
+.offset-top-quater {
+  padding-top: var(--length-quater);
+}
+
+.offset-top-half {
+  padding-top: var(--length-half);
+}
+
+.offset-top-1 {
+  padding-top: var(--length-1);
+}
+
+.offset-top-2 {
+  padding-top: var(--length-2);
+}
+
+.offset-bottom-quater {
+  padding-bottom: var(--length-quater);
+}
+
+.offset-bottom-half {
+  padding-bottom: var(--length-half);
+}
+
+.offset-bottom-1 {
+  padding-bottom: var(--length-1);
+}
+
+.offset-bottom-2 {
+  padding-bottom: var(--length-2);
+}
 .border {
   /* About Style */
   border: 1px solid;
@@ -92,11 +158,23 @@ body {
 .center {
   /* Center Content */
   margin: 0px auto;
+  display: block;
+}
+.box-left {
+  margin-left : 0px;
+  display: block;
+}
+.box-right {
+  margin-right: 0px;
+  display: block;
 }
 
 .width-fit {
   /* Fit Width to content */
   width: max-content;
+}
+.width-fill {
+  width: 100%;
 }
 
 .styleRef {
@@ -107,6 +185,23 @@ body {
 .default_body_padding {
   padding-left: 120px;
   padding-right: 120px;
+}
+
+.buttonStyle1 {
+  width: 100%;
+  color: var(--dark);
+  border-radius: 50px;
+  background-color: var(--papaya);
+  padding: 15px;
+  border: 2px solid var(--papaya-tint-2);
+}
+.buttonStyle2 {
+  width: 100%;
+  color: white;
+  border-radius: 50px;
+  background-color: #37264d;
+  padding: 15px;
+  border: 2px solid #b793e6;
 }
 
 .row,

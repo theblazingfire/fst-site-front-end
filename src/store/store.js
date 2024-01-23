@@ -3,12 +3,12 @@ import { createStore } from "vuex";
 let store = createStore({
   state() {
     return {
-      testData: "",
+      pageAtTop: "true",
     };
   },
   mutations: {
-    changeTestData(state, payload) {
-      state.testData = payload;
+    changePageAtTop(state, payload) {
+      state.pageAtTop = payload;
     },
   },
 });

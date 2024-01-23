@@ -1,0 +1,151 @@
+/* 
+Style for homepage CTA top
+*/
+.cta-img {
+  /* About Style */
+  max-width: 450px;
+}
+.cta-top-texts {
+  /* About Style */
+  position: relative;
+}
+.cta-top-texts > h3,
+.cta-top-texts > p {
+  position: relative;
+  z-index: 2;
+}
+.cta-text-bg-1 {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  transform: rotate(-5deg);
+  top: 20px;
+  border-radius: 10px;
+  z-index: 0;
+  background-color: var(--papaya-tint-3);
+}
+.cta-text-bg-2 {
+  position: absolute;
+  width: 80%;
+  height: 70px;
+  transform: rotate(-5deg);
+  top: 70px;
+  border-radius: 10px;
+  z-index: 1;
+  background-color: var(--coolbubble-tint-3);
+}
+@media (min-width: 768px) {
+  .cta-img {
+    padding-top: 0px !important;
+  }
+}
+
+#services {
+  color: var(--dark);
+}
+
+.services-container {
+    position: relative;
+}
+.services-main {
+    position: relative;
+    z-index: 2;
+}
+.services-bg-container {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+.sbi-ma {
+    margin-top: -20%;
+}
+
+.service-head {
+  max-width: 400px;
+}
+
+.service-box {
+  border: 2px solid;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.service-box.modern-webdesign {
+  background-color: #ffdede;
+  border-color: #979797;
+}
+.service-box.mobile-app {
+    background-color: #7DD0FF;
+    border-color: #52b1e7;
+    color: var(--dark);
+}
+.service-box.ui-ux-graphics {
+    background-color: #29262D;
+    border-color: #e1ccfc;
+    color : white;
+}
+.service-box.animations-2d {
+    background-color: #FFF1D5;
+    border-color: #ac8f56;
+    color : var(--dark)
+}
+
+
+.service-image-bg {
+  position: relative;
+  right: 10px;
+  border-radius: 40px;
+  background-color: white;
+}
+.service-image-bg > img {
+  position: relative;
+  bottom: 10px;
+  left: 15px;
+}
+@media (min-width: 768px) {
+  .service-image-bg {
+    position: relative;
+    right: 10px;
+    border-radius: 40px;
+    background-color: white;
+    margin-top: -30px !important;
+    width: 300px;
+  }
+
+  .service-box.service-box.modern-webdesign {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+
+    width: max-content;
+  }
+  .service-texts {
+    width: 343px !important;
+  }
+  .service-image-box {
+    width: 260px !important;
+  }
+  
+.service-left {
+    margin-left : 5% !important;
+    display : block;
+}
+.service-right {
+    margin-right : 5% !important;
+    display : block;
+}
+}
+@media (min-width: 1200px) {
+ .service-image-bg.pos-left {
+    right: 60px;
+  }
+  .service-image-bg.pos-left > img {
+    left : -15px;
+  }
+  .lg-sbh {
+    width: 300px !important;
+  }
+  .lg-sbs {
+    width: 650px !important;
+  }
+}
