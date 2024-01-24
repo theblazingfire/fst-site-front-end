@@ -1,0 +1,100 @@
+.exhibits-container {
+    background-color: var(--dark-gray);
+    color : white;
+}
+
+.eh-text {
+    max-width: 800px;
+}
+
+.eh-link {
+    color : var(--papaya)  !important;
+    font-weight: 600;
+}
+
+.exhibits-select > div, .feature-items > div  {
+    width: max-content !important;
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.p-item-head{
+
+}
+.portfolio-item-container {
+    padding: 30px 10px !important;
+    border: 2px solid white;
+    border-radius: 24px;
+}
+
+.p-item-head > div {
+    width: max-content;
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+.p-item-head > div img {
+    width: 50px;
+}
+
+.features {
+    padding: 7px;
+}
+
+.exhibits-more-image{
+    padding: 5px;
+}
+
+.emm-background {
+    background-color: white;
+    margin-left : -5px;
+    border-radius: 20px;
+}
+
+.emm-background > img {
+    position: relative;
+    left : 10px;
+    bottom: 5px;
+    border-radius: 20px;
+}
+
+
+/*Style for post section */
+.pi-image-container{
+    position : relative;;
+}
+
+.pi-image-container img {
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid var(--dark-gray);
+}
+.pi-contents-container {
+    border: 2px solid var(--dark-gray);
+    width: 94%;
+    margin: 0px auto;
+    margin-top: -9px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px 10px 10px 10px;
+}
+.read_button {
+    display: flex;
+    height: 30px;
+    padding: 2px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    left: 14px;
+    bottom: 20px;
+    border-radius: 7px;
+    border: 1px solid #37264D;
+    background: #FFBE5E;
+    color: #37264D;
+}
+.post-items > div {
+    max-width: 400px;
+}
+

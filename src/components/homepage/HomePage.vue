@@ -1,6 +1,6 @@
 <template>
   <div data-testid="home" class="offset-bottom-1">
-    <div class="offset-main"></div>
+    <div class="offset-top-main"></div>
     <section id="hero" data-testid="hero">
       <div class="default_body_padding hero-main">
         <div class="container-fluid">
@@ -148,10 +148,10 @@
       </div>
     </section>
 
-    <section id="services" data-testid="services">
+    <section id="services" class="offset-top-half" data-testid="services">
       <div class="services-container">
         <div class="services-main">
-          <div class="default_body_padding border">
+          <div class="default_body_padding">
             <div class="container-fluid">
               <div
                 id="service-top-row"
@@ -159,7 +159,7 @@
               >
                 <div class="col-12 lg-sbh">
                   <div class="service-box service-head center">
-                    <h3 class="text-subheading-bold text-center">
+                    <h3 class="text-subheading-bold text-h3-lg text-center">
                       Our Services
                     </h3>
                     <p class="text-body-regular text-center">
@@ -336,14 +336,329 @@
       </div>
     </section>
 
-    <section id="exhibits"></section>
+    <section id="exhibits" class="offset-top-1">
+      <div class="exhibits-container default_body_padding offset-top-1">
+        <div>
+          <div class="exhibits-head">
+            <h1 class=" text-center text-h3 text-h2-lg">Projects &amp; Exhibits</h1>
+            <p class="text-center center text-body-regular eh-text offset-top-quater">See our portfolio of exciting projects in various categories. Only the latest project from each categories are shown here. <a class="eh-link">Visit our exhibit page</a> to see more of our projects now.</p>
+          </div>
+          <div class="container-fluid">
+            <div class="exhibits-select row justify-content-center">
+              <div>
+                <button class="buttonOutline1 buttonOutline1_active center">All</button>            
+              </div>
+              <div>
+                <button class="buttonOutline1 center">Web Design</button>            
+              </div>
+              <div>
+                <button class="buttonOutline1 center">Mobile Development</button>            
+              </div>
+              <div>
+                <button class="buttonOutline1 center">2d Animated Videos</button>            
+              </div>
+              <div>
+                <button class="buttonOutline1 center">Graphics & UI/UX Design</button>            
+              </div>
+            </div>            
+          </div>
+          <div class="offset-top-1">
+            <div class="portfolio-item-container">
+              <div class="container-fluid">
+                <div class="row no-margin p-item-head align-items-center">
+                  <div><img src="../../assets/images/p.svg"></div>
+                  <div class="height-fit"><p class="text-body-bold text-subheading-regular-md">Clarissa Morganstein</p></div>
+                </div>
+                <div class="p-item-body">
+                  <p class="text-body-bold">About This Project:</p>
+                  <p class="text-body-regular">This project was designed and developed for our client at Clarissa Morganstein Clothing Line. Packing eye catching visuals and a easy to navigate interface, this website accomplishes the goal of making it easy for customers to make orders for dresses and other products. The feedback system is immaculate and allows 24 hour real time chat between Clarissa Morganstein customer service and the client. Overall client satisfaction with the product and the ease of use has allowed clarissa morganstein to generate over 12k sales from the site alone. And that is not even stratching the surface, because it has the potential to more than quadruple that amount in sales over the next quater of the year.</p>
+                </div>
+                <div class="p-video-item">
+                  <div class="p-video-container offset-top-quater">
+                    <img src="../../assets/images/p-video-cover.png">
+                  </div>
+                </div>
+                <div class="features">
+                  <div class="container-fluid">
+                    <div class="feature-items row">
+                      <div><p class="text-body-bold">Features: </p></div>
+                      <div>
+                        <button class="buttonOutline2 center">Order Management & Tracking</button>            
+                      </div>
+                      <div>
+                        <button class="buttonOutline2 center">Integrated Payment Gateway</button>            
+                      </div>
+                      <div>
+                        <button class="buttonOutline2 center">Site Analytics</button>            
+                      </div>
+                      <div>
+                        <button class="buttonOutline2 center">Fluid User Account Management</button>            
+                      </div>
+                      <div>
+                        <button class="buttonOutline2 center">Social Media Integration</button>            
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="exhibits-more-image">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-12 col-lg-6 offset-top-quater">
+                        <div class="emm-background">
+                          <img src="../../assets/images/p-video-cover.png">
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-6 offset-top-quater">
+                        <div class="emm-background">
+                          <img src="../../assets/images/p-video-cover.png">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="exhibits-link-button offset-top-half">
+           <button class="buttonStyle1 text-body-bold">See more of our projects here</button>
+          </div>
+          <div class="offset-top-1"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog-section" class="offset-bottom-1">
+      <div class="offset-top-1 default_body_padding">
+        <div class="container-fluid">
+          <div>
+            <p class="text-h3 text-h2-lg text-center">Posts &amp; Videos</p>
+          </div>
+          <div class="post-items row justify-content-center">
+            <div class="offset-top-half">
+              <div class="post-item">
+                <div class="pi-image-container">
+                  <img src="../../assets/images/post-img.png">
+                  <button class="read_button text-body-bold">Read</button>
+                </div>
+                <div class="pi-contents-container">
+                  <p class="text-body-regular">Why wage a holy war against AI?
+                    AI isn&apos;t taking your jobs, instead take advantage of AI, integrate it to your workflow and deliver faster...</p>
+                    <div class="tags-container">
+                      <p class="text-small-bold offset-top-quater">
+                        #artificial-intelligence #aitech #machine-learning
+                      </p>
+                    </div>
+                
+                  </div>
+              </div>              
+            </div>
+            <div class="offset-top-half">
+              <div class="post-item">
+                <div class="pi-image-container">
+                  <img src="../../assets/images/post-img.png">
+                  <button class="read_button text-body-bold">Read</button>
+                </div>
+                <div class="pi-contents-container">
+                  <p class="text-body-regular">Why wage a holy war against AI?
+                    AI isn&apos;t taking your jobs, instead take advantage of AI, integrate it to your workflow and deliver faster...</p>
+                    <div class="tags-container">
+                      <p class="text-small-bold offset-top-quater">
+                        #artificial-intelligence #aitech #machine-learning
+                      </p>
+                    </div>
+                
+                  </div>
+              </div>              
+            </div>
+            <div class="offset-top-half">
+              <div class="post-item">
+                <div class="pi-image-container">
+                  <img src="../../assets/images/post-img.png">
+                  <button class="read_button text-body-bold">Read</button>
+                </div>
+                <div class="pi-contents-container">
+                  <p class="text-body-regular">Why wage a holy war against AI?
+                    AI isn&apos;t taking your jobs, instead take advantage of AI, integrate it to your workflow and deliver faster...</p>
+                    <div class="tags-container">
+                      <p class="text-small-bold offset-top-quater">
+                        #artificial-intelligence #aitech #machine-learning
+                      </p>
+                    </div>
+                
+                  </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact-section" class="offset-top-1 offset-bottom-1 default_body_padding">
+      <div class="contact-container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-md-6 no-gutter">
+              <div class="contact-methods offset-top-1 offset-bottom-1">
+                <div>
+                  <h3 class="text-h3">Contact Us</h3>
+                  <p class="text-body-regular offset-top-quater">Contact us via the following platforms, We typically respond to messages within at least 30 minutes.</p>
+                </div>
+                <div>
+                  <div class="contact-method offset-top-half container-fluid">
+                    <div class="row align-items-center">
+                      <div class="cm-img width-fit">
+                        <img src="../../assets/images/extras/envelope.svg">
+                      </div>
+                      <div class="cm-details width-fit">
+                        <a href="#">adefuyeabayomi16@gmail.com</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="contact-method offset-top-half container-fluid">
+                    <div class="row align-items-center">
+                      <div class="cm-img width-fit">
+                        <img src="../../assets/images/extras/phone.svg">
+                      </div>
+                      <div class="cm-details width-fit">
+                        <a href="#">+234 81 3624 3796</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="contact-method offset-top-half container-fluid">
+                    <div class="row align-items-center">
+                      <div class="cm-img width-fit">
+                        <img src="../../assets/images/extras/whatsapp.svg">
+                      </div>
+                      <div class="cm-details width-fit">
+                        <a href="#">+234 81 3624 3796</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 no-gutter">
+              <div class="contact-by-instant-message offset-top-1 offset-bottom-1">
+                <div>
+                  <p class="text-subheading-regular">Send an Instant message</p>
+                  <p class="text-small-regular">Send us a message. Fill the message you want to pass to us. Please include your email so we can reply you.</p>
+                </div>
+                <div class="contact-inputs">
+                  <div class="offset-top-quater">
+                    <input class="ci-email" type="text">
+                  </div>
+                  <div class="offset-top-quater">
+                    <textarea class="ci-message"></textarea>
+                  </div>
+                  <div class="offset-top-quater">
+                    <button class="buttonStyle3 text-body-regular">Send Your Message</button>
+                  </div>
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer-section">
+      <div class="offset-top-1 offset-bottom-1 default_body_padding">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-md-6 col-xl-3 no-gutter">
+              <div class="fs-quicklinks offset-top-quater">
+                <p class="text-body-bold fs-sec-title">Quick Navigation</p>
+                <div class="fs-ql-container">
+                  <ul class="fs-list">
+                    <li class="text-body-regular">Homepage</li>
+                    <li class="text-body-regular">What we do</li>
+                    <li class="text-body-regular">Our Products</li>
+                    <li class="text-body-regular">Our Exhibits & Projects</li>
+                    <li class="text-body-regular">Blog: Trending Articles &amp; Videos</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12  col-md-6 col-xl-3 no-gutter">
+              <div class="fs-services offset-top-quater">
+                <p class="text-body-bold fs-sec-title">Services</p>
+                <div class="fs-ql-container">
+                  <ul class="fs-list">
+                    <li class="text-body-regular">Modern Web Design</li>
+                    <li class="text-body-regular">Mobile App Development</li>
+                    <li class="text-body-regular">UI/UX Design</li>
+                    <li class="text-body-regular">Graphics Design</li>
+                    <li class="text-body-regular">2d Animation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 no-gutter">
+              <div class="fs-products offset-top-quater">
+                <p class="text-body-bold fs-sec-title">Our Products</p>
+                <div class="fs-ql-container">
+                  <ul class="fs-list">
+                    <li class="text-body-regular">Showa (Coming Soon)</li>
+                    <li class="text-body-regular">Scribba Designer (Coming Soon)</li>
+                    <li class="text-body-regular">Baddie (Coming Soon)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 no-gutter">
+              <div class="fs-customer-service offset-top-quater">
+                <p class="text-body-bold fs-sec-title">Customer Services</p>
+                <div class="fs-ql-container">
+                  <ul class="fs-list">
+                    <li class="text-body-regular">Frequently Asked Questions (FAQs)</li>
+                    <li class="text-body-regular">Hotline: =234 81 3624 3796</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="fs-socials offset-top-quater">
+                <p class="text-body-bold fs-sec-title fss-title">Follow Us On Social Media: </p>
+                <div class="fs-social-images">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="no-gutter fss-social-img width-fit">
+                        <img src="../../assets/images/extras/phone.svg">
+                      </div>
+                      <div class="no-gutter fss-social-img width-fit">
+                        <img src="../../assets/images/extras/phone.svg">
+                      </div>
+                      <div class="no-gutter fss-social-img width-fit">
+                        <img src="../../assets/images/extras/phone.svg">
+                      </div>
+                      <div class="no-gutter fss-social-img width-fit">
+                        <img src="../../assets/images/extras/phone.svg">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </section>
+
   </div>
 </template>
 
 <script>
-import "./homepage.css";
-import "./cta-services.css";
-import "./homepage-animation.css";
+import "./homepage.css"
+import "./cta-services.css"
+import "./homepage-animation.css"
+import "./exhibits.css"
+import "./contact-footer.css"
+
 export default {
   data() {
     return {};
