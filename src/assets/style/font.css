@@ -52,6 +52,23 @@
   line-height: 200%; /* 32px */
   letter-spacing: 0.32px;
 }
+.text-body-light {
+  /* Body/Regular */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 200%; /* 32px */
+  letter-spacing: 0.32px;
+}
+
+.text-body-small-light {
+  /* Body/Regular */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 200%; /* 32px */
+  letter-spacing: 0.32px;
+}
 .text-body-bold {
   /* Body/Bold */
   font-size: 16px;
