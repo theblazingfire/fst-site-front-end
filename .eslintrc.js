@@ -17,6 +17,7 @@ let config = {
   },
   globals: {
     test: true,
+    "vi": true
   },
 };
 

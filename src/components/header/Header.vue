@@ -83,7 +83,7 @@
             >
               <div class="height-fit class">
                 <div class="justify-content-right">
-                  <button @click="scrollToContact" class="button_small_3_round text-small-bold">
+                  <button class="button_small_3_round text-small-bold" @click="scrollToContact">
                     Get In Touch
                   </button>
                 </div>
