@@ -2,6 +2,7 @@ import { describe, expect, test } from "vitest";
 import { render, screen } from "@testing-library/vue";
 import HomePage from "./HomePage.vue";
 import gsap from "../../utils/plugin/vue-gsap";
+
 Object.defineProperty(window, 'matchMedia', {
   writable: true,
   value: vi.fn().mockImplementation(query => ({
@@ -15,6 +16,7 @@ Object.defineProperty(window, 'matchMedia', {
     dispatchEvent: vi.fn(),
   })),
 })
+
 describe("Homepage Component Test", () => {
   test("Hompage render correctly", () => {
     render(HomePage,{

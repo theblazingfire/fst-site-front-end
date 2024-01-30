@@ -133,7 +133,7 @@
                 <div class="cta-text-bg-2"></div>
               </div>
               <div class="cta-buttons offset-top-half">
-                <button @click="scrollToContact" class="box button_fill_1_round text-body-bold">
+                <button class="box button_fill_1_round text-body-bold" @click="scrollToContact">
                   Get In Touch Now!
                 </button>
               </div>
@@ -711,13 +711,13 @@
                 </div>
                 <div class="contact-inputs">
                   <div class="offset-top-quater">
-                    <input :value="instantEmail" @change="(e) => this.instantEmail = e.target.value" class="ci-email" type="email" />
+                    <input :value="instantEmail" class="ci-email" type="email" @change="(e) => instantEmail = e.target.value" />
                   </div>
                   <div class="offset-top-quater">
-                    <textarea :value="instantMessage" @change="(e) => this.instantMessage = e.target.value" class="ci-message"></textarea>
+                    <textarea :value="instantMessage" class="ci-message" @change="(e) => instantMessage = e.target.value"></textarea>
                   </div>
                   <div class="offset-top-quater">
-                    <button @click="sendInstantMessage" class="buttonStyle3 text-body-regular">
+                    <button class="buttonStyle3 text-body-regular" @click="sendInstantMessage">
                       Send Your Message
                     </button>
                   </div>
@@ -891,6 +891,26 @@ export default {
       },
     };
   },
+  mounted() {
+    /*
+    let tl1 = this.$gsap.timeline()
+    tl1.to('.line1',{delay: 0, repeat: -1, yoyo: true , duration : 1.5, width: '70%'})
+    let tl4 = this.$gsap.timeline()
+    tl4.to(".line4",{delay : 3, repeat: -1, yoyo: true , duration : 1.5, width: '70%'})
+    let tl2 = this.$gsap.timeline()
+    tl2.to(".line2",{delay: 1, repeat: -1, yoyo: true, duration : 1.5, width: '100%'})    
+    let tl3 = this.$gsap.timeline()
+    tl3.to(".line3",{delay: 0, repeat: -1, yoyo: true , duration : 2, width: '125%', ease: 'elastic'})    
+    */
+
+    let tl5 = this.$gsap.timeline();
+    tl5.to(".hanging-content", {
+      rotation: 7,
+      yoyo: true,
+      duration: 3,
+      repeat: -1,
+    });
+  },
   methods : {
 
     scrollToContact (){
@@ -913,26 +933,6 @@ export default {
       let sent = await emailJs.send(serviceId, templateId, templateParams)
       console.log(sent)
     }
-  },
-  mounted() {
-    /*
-    let tl1 = this.$gsap.timeline()
-    tl1.to('.line1',{delay: 0, repeat: -1, yoyo: true , duration : 1.5, width: '70%'})
-    let tl4 = this.$gsap.timeline()
-    tl4.to(".line4",{delay : 3, repeat: -1, yoyo: true , duration : 1.5, width: '70%'})
-    let tl2 = this.$gsap.timeline()
-    tl2.to(".line2",{delay: 1, repeat: -1, yoyo: true, duration : 1.5, width: '100%'})    
-    let tl3 = this.$gsap.timeline()
-    tl3.to(".line3",{delay: 0, repeat: -1, yoyo: true , duration : 2, width: '125%', ease: 'elastic'})    
-    */
-
-    let tl5 = this.$gsap.timeline();
-    tl5.to(".hanging-content", {
-      rotation: 7,
-      yoyo: true,
-      duration: 3,
-      repeat: -1,
-    });
   },
 };
 </script>
