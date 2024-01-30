@@ -108,9 +108,13 @@
 
 <script>
 import "./testRoute.css";
+import {vsButton} from "vuesax"
 export default {
   data() {
     return {};
   },
+  components: {
+    vsButton
+  }
 };
 </script>

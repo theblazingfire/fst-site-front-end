@@ -53,32 +53,3 @@
   }
 }
 
-#footer-section {
-  background-color: #2a2136;
-  color: white;
-}
-
-.fs-list li {
-  list-style-type: none;
-}
-
-.fs-social-images img {
-  width: 30px;
-}
-
-.fss-social-img {
-  background-color: white;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px !important;
-  padding: 10px 12px !important;
-  border-radius: 40px;
-}
-
-.fs-sec-title {
-  color: var(--papaya);
-}
-
-.fss-title {
-  color: var(--shalewa);
-}
