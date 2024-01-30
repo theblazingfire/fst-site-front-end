@@ -19,7 +19,7 @@ Style for homepage CTA top
   width: 100%;
   height: 70px;
   transform: rotate(-5deg);
-  top: 20px;
+  top: -15px;
   border-radius: 10px;
   z-index: 0;
   background-color: var(--papaya-tint-3);
@@ -29,7 +29,7 @@ Style for homepage CTA top
   width: 80%;
   height: 70px;
   transform: rotate(-5deg);
-  top: 70px;
+  top: 35px;
   border-radius: 10px;
   z-index: 1;
   background-color: var(--coolbubble-tint-3);
@@ -45,20 +45,26 @@ Style for homepage CTA top
 }
 
 .services-container {
-    position: relative;
+  position: relative;
 }
 .services-main {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 .services-bg-container {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    z-index: 1;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  height: -webkit-fill-available;
+}
+
+.sbi {
+  width: 100%;
+  height: 200px;
 }
 .sbi-ma {
-    margin-top: -20%;
+  margin-top: -100px;
 }
 
 .service-head {
@@ -76,21 +82,20 @@ Style for homepage CTA top
   border-color: #979797;
 }
 .service-box.mobile-app {
-    background-color: #7DD0FF;
-    border-color: #52b1e7;
-    color: var(--dark);
+  background-color: #7dd0ff;
+  border-color: #52b1e7;
+  color: var(--dark);
 }
 .service-box.ui-ux-graphics {
-    background-color: #29262D;
-    border-color: #e1ccfc;
-    color : white;
+  background-color: #29262d;
+  border-color: #e1ccfc;
+  color: white;
 }
 .service-box.animations-2d {
-    background-color: #FFF1D5;
-    border-color: #ac8f56;
-    color : var(--dark)
+  background-color: #fff1d5;
+  border-color: #ac8f56;
+  color: var(--dark);
 }
-
 
 .service-image-bg {
   position: relative;
@@ -103,6 +108,7 @@ Style for homepage CTA top
   bottom: 10px;
   left: 15px;
 }
+
 @media (min-width: 768px) {
   .service-image-bg {
     position: relative;
@@ -125,27 +131,28 @@ Style for homepage CTA top
   .service-image-box {
     width: 260px !important;
   }
-  
-.service-left {
-    margin-left : 5% !important;
-    display : block;
-}
-.service-right {
-    margin-right : 5% !important;
-    display : block;
-}
+
+  .service-left {
+    margin-left: 5% !important;
+    display: block;
+  }
+  .service-right {
+    margin-right: 5% !important;
+    display: block;
+  }
 }
 @media (min-width: 1200px) {
- .service-image-bg.pos-left {
+  .service-image-bg.pos-left {
     right: 60px;
   }
   .service-image-bg.pos-left > img {
-    left : -15px;
+    left: -15px;
   }
   .lg-sbh {
     width: 300px !important;
   }
   .lg-sbs {
     width: 650px !important;
+    transition: all 1s;
   }
 }

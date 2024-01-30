@@ -205,12 +205,6 @@ img.hero-image {
 *Responsive
 */
 
-@media (min-width: 400px) {
-}
-@media (min-width: 500px) {
-}
-@media (min-width: 500px) {
-}
 @media (min-width: 768px) {
   .hero-image-box {
     /* About Style */

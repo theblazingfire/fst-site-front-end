@@ -1,3 +1,4 @@
+/* global variables and properties*/
 :root {
   /* Break Points */
   --xs: 0px;
@@ -46,19 +47,16 @@
   --shalewa-shade-2: #fff;
   --shalewa-shade-3: #fff;
   --shalewa-shade-4: #fff;
-  /* Padding */
+  /* length variable */
   --length-quater: 15px;
   --length-half: 30px;
   --length-1: 60px;
   --length-2: 120px;
+  --length-3: 180px;
 }
-button {
-  /* Override Defaults - Write Globals */
-  border: 0px solid;
-}
-button:hover {
-  cursor: pointer;
-}
+/* Global Button Styles */
+
+
 * {
   /* About Style */
   margin: 0px;
@@ -72,12 +70,22 @@ img {
 }
 
 a {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 body {
   width: 100%;
   overflow-x: hidden;
+  color: var(--dark);
+}
+
+.no-gutter {
+  /* About Style */
+  padding: 0px;
+}
+
+.no-margin {
+  margin: 0px;
 }
 
 .padding-quater {
@@ -95,9 +103,11 @@ body {
 .padding-2 {
   padding: var(--length-2);
 }
+
 .offset-top-none {
   padding-top: 0px;
 }
+
 .offset-top-main {
   /* About Style */
   padding-top: 120px;
@@ -134,17 +144,10 @@ body {
 .offset-bottom-2 {
   padding-bottom: var(--length-2);
 }
+
 .border {
   /* About Style */
   border: 1px solid;
-}
-
-.no-gutter {
-  /* About Style */
-  padding: 0px;
-}
-.no-margin {
-  margin: 0px;
 }
 
 .height-1 {
@@ -167,10 +170,12 @@ body {
   margin: 0px auto;
   display: block;
 }
+
 .box-left {
-  margin-left : 0px;
+  margin-left: 0px;
   display: block;
 }
+
 .box-right {
   margin-right: 0px;
   display: block;
@@ -192,56 +197,6 @@ body {
 .default_body_padding {
   padding-left: 120px;
   padding-right: 120px;
-}
-
-.buttonStyle1 {
-  width: 100%;
-  color: var(--dark);
-  border-radius: 50px;
-  background-color: var(--papaya);
-  padding: 15px;
-  border: 2px solid var(--papaya-shade-1);
-}
-.buttonStyle2 {
-  width: 100%;
-  color: white;
-  border-radius: 50px;
-  background-color: #37264d;
-  padding: 15px;
-  border: 2px solid #b793e6;
-}
-.buttonStyle3 {
-  border: 0px solid;
-  background-color: var(--dark);
-  color : white;
-  padding: 10px 45px;
-  border-radius: 8px;
-  margin: 0px auto;
-  display: block;
-}
-.buttonOutline1 {
-  width: max-content;
-  color: white;
-  border: 2px solid white;
-  border-radius : 7px;
-  background-color: transparent;
-  padding: 3px 8px 3px 8px;
-}
-.buttonOutline2 {
-  width: max-content;
-  color: white;
-  border: 2px solid white;
-  border-radius : 12px;
-  background-color: transparent;
-  padding: 3px 8px 3px 8px;
-  box-shadow: 0px 0px 3px var(--smoke);
-}
-
-.buttonOutline1_active {
-  color : var(--dark-gray);
-  background-color: white;
-  border : 2px solid var(--lightslate);
-  box-shadow: 0px 0px 7px var(--smoke)
 }
 
 .row,
