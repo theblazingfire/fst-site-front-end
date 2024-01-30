@@ -83,7 +83,7 @@
             >
               <div class="height-fit class">
                 <div class="justify-content-right">
-                  <button class="fst-contact-button-header text-small-bold">
+                  <button @click="scrollToContact" class="button_small_3_round text-small-bold">
                     Get In Touch
                   </button>
                 </div>
@@ -97,7 +97,7 @@
     <div
       id="mobile-menu"
       :class="{ open: mobileMenuOpen, down }"
-      class="default_body_padding mobile-nav"
+      class="default_body_padding mobile-nav d-lg-none"
       role="mobile_menu"
     >
       <div>
@@ -155,6 +155,8 @@
 import "./header.css";
 import Hamburger from "../hamburger/Hamburger.vue";
 import store from "../../store/store";
+
+
 document.addEventListener("scroll", () => {
   let top = window.scrollY == 0;
   console.log("top", top);
@@ -181,6 +183,16 @@ export default {
     openMobileMenu(open) {
       this.mobileMenuOpen = open;
     },
+
+    scrollToContact (){
+    console.log("scrolling")
+    this.$scrollTo("#contact-section", {
+    offset: -60,
+    ease: 'in-out-quad',
+    duration: 1500
+  });
+
+    }
   },
 };
 </script>

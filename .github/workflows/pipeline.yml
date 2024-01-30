@@ -3,7 +3,7 @@ name: Code Quality Accessment
 on:
   pull_request:
     branches: [experimental]
-    types: [opened]
+    types: [opened, closed, synchronize]
   push:
     branches: [main]
 
