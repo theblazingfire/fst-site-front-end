@@ -23,7 +23,7 @@ button:hover {
   border: 3px solid var(--papaya-shade-1);
 }
 .button_small_2 {
-  height: 40px;
+  height: 35px;
   padding: 5px 20px;
   font-size: 80%;
   font-weight: 500;
@@ -31,7 +31,7 @@ button:hover {
   border: 3px solid var(--papaya-shade-1);
 }
 .button_small_2_round {
-  height: 40px;
+  height: 35px;
   padding: 5px 20px;
   font-size: 80%;
   border-radius: 10px;
@@ -40,14 +40,14 @@ button:hover {
   border: 3px solid var(--papaya-shade-1);
 }
 .button_small_3 {
-  height: 45px;
+  height: 40px;
   padding: 5px 25px;
   font-weight: 500;
   background: #ffbe5e;
   border: 2px solid var(--papaya-shade-1);
 }
 .button_small_3_round {
-  height: 45px;
+  height: 40px;
   padding: 5px 25px;
   border-radius: 36px;
   font-weight: 500;
