@@ -95,3 +95,19 @@
 .pi-container {
   max-width: 300px !important;
 }
+.carousel__next,
+.carousel__prev {
+  border: 3px solid !important;
+  border-radius: 100% !important;
+  background-color: white !important;
+  color: var(--papaya) !important;
+  width: 50px !important;
+  height: 50px !important;
+}
+.carousel__next {
+  right: -25px !important;
+}
+
+.carousel__prev {
+  left: -25px !important;
+}

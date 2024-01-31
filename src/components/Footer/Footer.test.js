@@ -5,7 +5,7 @@ import Footer from "./Footer.vue";
 describe("test", function () {
   test("test1", function () {
     render(Footer);
-    let FooterElement = screen.getByText("A Footer", { exact: false });
+    let FooterElement = screen.getByTestId("footer");
     expect(FooterElement).toBeDefined();
   });
 });

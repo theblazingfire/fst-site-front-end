@@ -74,7 +74,10 @@
               class="col-6 col-sm-1 order-sm-3 order-lg-4 d-lg-none no-gutter"
             >
               <div class="ham-box">
-                <Hamburger @open="openMobileMenu"></Hamburger>
+                <Hamburger
+                  :open="mobileMenuOpen"
+                  @toggle="openMobileMenu"
+                ></Hamburger>
               </div>
             </div>
             <div
@@ -83,7 +86,10 @@
             >
               <div class="height-fit class">
                 <div class="justify-content-right">
-                  <button class="button_small_3_round text-small-bold" @click="scrollToContact">
+                  <button
+                    class="button_small_3_round text-small-bold"
+                    @click="scrollToContact"
+                  >
                     Get In Touch
                   </button>
                 </div>
@@ -110,6 +116,7 @@
               to="/"
               :class="{ homeActive }"
               class="text-body-bold text-no-decoration"
+              @click="openMobileMenu(false)"
               >Home</router-link
             >
           </li>
@@ -118,6 +125,7 @@
               to="/products"
               :class="{}"
               class="text-body-regular text-no-decoration"
+              @click="openMobileMenu(false)"
               >Products</router-link
             >
           </li>
@@ -126,6 +134,7 @@
               to="/services"
               :class="{}"
               class="text-body-regular text-no-decoration"
+              @click="openMobileMenu(false)"
               >Services</router-link
             >
           </li>
@@ -134,6 +143,7 @@
               to="/exhibits"
               :class="{}"
               class="text-body-regular text-no-decoration"
+              @click="openMobileMenu(false)"
               >Exhibits</router-link
             >
           </li>
@@ -142,6 +152,7 @@
               to="/articles_and_blog"
               :class="{}"
               class="text-body-regular text-no-decoration"
+              @click="openMobileMenu(false)"
               >Articles & Videos</router-link
             >
           </li>
@@ -155,7 +166,6 @@
 import "./header.css";
 import Hamburger from "../hamburger/Hamburger.vue";
 import store from "../../store/store";
-
 
 document.addEventListener("scroll", () => {
   let top = window.scrollY == 0;
@@ -180,19 +190,18 @@ export default {
     },
   },
   methods: {
-    openMobileMenu(open) {
-      this.mobileMenuOpen = open;
+    openMobileMenu() {
+      this.mobileMenuOpen = !this.mobileMenuOpen;
     },
 
-    scrollToContact (){
-    console.log("scrolling")
-    this.$scrollTo("#contact-section", {
-    offset: -60,
-    ease: 'in-out-quad',
-    duration: 1500
-  });
-
-    }
+    scrollToContact() {
+      console.log("scrolling");
+      this.$scrollTo("#contact-section", {
+        offset: -60,
+        ease: "in-out-quad",
+        duration: 1500,
+      });
+    },
   },
 };
 </script>

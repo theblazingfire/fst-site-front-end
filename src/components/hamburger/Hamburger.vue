@@ -1,7 +1,12 @@
 <template>
   <div>
     <div role="ham_icon_container" class="hamburger-container" @click="openHam">
-      <div :class="{ open }" class="menu btn11" role="ham_icon" data-menu="11">
+      <div
+        :class="{ open: c_toggle }"
+        class="menu btn11"
+        role="ham_icon"
+        data-menu="11"
+      >
         <div class="icon-left"></div>
         <div class="icon-right"></div>
       </div>
@@ -12,17 +17,22 @@
 <script>
 import "./hamburger.css";
 export default {
-  emits: ["open"],
+  props: {
+    open: Boolean,
+  },
+  emits: ["toggle"],
   data() {
-    return {
-      open: false,
-    };
+    return {};
+  },
+  computed: {
+    c_toggle() {
+      console.log("hamburger open", this.open);
+      return this.open;
+    },
   },
   methods: {
     openHam() {
-      let ham = !this.open;
-      this.open = ham;
-      this.$emit("open", ham);
+      this.$emit("toggle");
     },
   },
 };

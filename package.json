@@ -14,17 +14,13 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
-    "animated-scroll-to": "^2.3.0",
     "bootstrap": "^5.3.2",
     "gsap": "^3.12.4",
     "scroll-to-element": "^2.0.3",
-    "swiper": "^11.0.5",
     "vue": "^3.3.11",
-    "vue-carousel-3d": "^1.0.1",
     "vue-router": "^4.2.5",
     "vue3-carousel": "^0.3.1",
-    "vue3-smooth-scroll": "^0.8.1",
-    "vuesax": "^4.0.1-alpha.25",
+    "vuesax3": "^4.2.1",
     "vuex": "^4.1.0"
   },
   "devDependencies": {
